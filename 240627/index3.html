@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <fieldset>
+      <div style="font-weight: bold">
+        <legend>학사정보 조회서비스</legend>
+      </div>
+      <form action="https:localhost:3000" method="get">
+        <div style="color: aqua">
+          <label for="name">이름</label>
+          <input type="text" id="name" />
+        </div>
+        <div style="color: aqua">
+          <label for="number">학번</label>
+          <input type="text" id="number" />
+        </div>
+        <div style="color: aqua">
+          <label for="major">학과</label>
+          <input type="text" id="major" />
+        </div>
+      </form>
+    </fieldset>
+    <input type="submit" value="조회하기" />
+  </body>
+</html>
