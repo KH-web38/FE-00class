@@ -1,4 +1,4 @@
-@import url(./reset.css);
+@import url("./reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Coiny&display=swap");
 
 /* header */
@@ -34,7 +34,7 @@
         border-radius: 10px 0 0 10px;
       }
       li:last-child > a {
-        border-radius: 0px 10px 10px 0;
+        border-radius: 0 10px 10px 0;
       }
     }
   }
@@ -68,8 +68,8 @@
 #main_content {
   width: 960px;
   margin: 0 auto;
-  gap: 10px;
   display: flex;
+  gap: 10px;
   #main_section {
     width: 750px;
     .main_article {
@@ -80,7 +80,6 @@
   }
   #main_aside {
     width: 200px;
-
     input[type="radio"] {
       display: none;
       &:first-of-type:checked ~ div:first-of-type {
@@ -89,11 +88,11 @@
       &:last-of-type:checked ~ div:last-of-type {
         display: block;
       }
-      &:first-of-type:checked ~ .buttons > label:first-of-type {
+      &:first-of-type: chekced ~ .buttons > label:first-of-type {
         background: #fff;
         color: #000;
       }
-      &:last-of-type:checked ~ .buttons > label:last-of-type {
+      &:last-of-type: chekced ~ .buttons > label:last-of-type {
         background: #fff;
         color: #000;
       }
@@ -111,33 +110,8 @@
         border: 1px solid #000;
       }
     }
-    div.tab_item {
+    div {
       display: none;
-      .item {
-        padding: 10px;
-        border: 1px solid #000;
-        border-top: none;
-        a {
-          display: flex;
-          gap: 10px;
-          strong {
-            display: inline-block;
-            width: 120px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-          }
-        }
-      }
     }
   }
-}
-
-/* footer */
-#main_footer {
-  width: 960px;
-  margin: 0 auto;
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #000;
 }
